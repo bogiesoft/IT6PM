@@ -54,9 +54,19 @@ document.write('<link rel="stylesheet" href="css/style.css?cache='+ new Date().g
     }
 
     async function shareMsg() {
+
+
     }
 
     function logOut() {
+
+
+      liff.logOut()
+      Window.location.reload()
+
+
+
+
     }
 
     function closed() {
@@ -195,11 +205,18 @@ alert("Message sent")
     async function main() {
   
       await liff.init({ liffId: "1660949322-edqG7kkq" })
+
+      document.getElementById("isLoggedIn").append(liff.isLoggedIn())
+if(liff.isLoggedIn) {
+  getUserProfile()
+  getContext()
+  getFriendship()
+  // createUniversalLink()
+
+}
+
       getEnvironment()
-      getUserProfile()
-      getContext()
-      getFriendship()
-      // createUniversalLink()
+
     }
     main()
   </script>
