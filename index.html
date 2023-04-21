@@ -3,8 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
-  <title>Line Liff App</title>
-  <link rel="stylesheet" href="css/style.css" media="all">
+  <title>Line Liff App ver.1.0</title>
+<!--   <link rel="stylesheet" href="css/style.css" media="all"> -->
+
+  <script>
+document.write('<link rel="stylesheet" href="css/style.css?cache='+ new Date().getTime() +'">')
+  </script>
+
 </head>
 <body>
   <p id="os"><b>OS:</b> </p>
@@ -40,7 +45,7 @@
   <script>
     var vConsole = new VConsole()
     console.log("Hello World!")
-    errorPlease()
+    
   </script>
 
  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script> 
