@@ -54,15 +54,33 @@ document.write('<link rel="stylesheet" href="css/style.css?cache='+ new Date().g
     }
 
     async function shareMsg() {
+      await liff.shareTargetPicker([
+{
+  "type": "text",
+  "text": "This message was sent by Share TargetPicker"
+
+}
+         
+
+
+
+      ]
+
+      )
+
+
+
+
+
+
+
 
 
     }
 
     function logOut() {
-
       liff.logout()
       Window.location.reload()
-
 
     }
 
